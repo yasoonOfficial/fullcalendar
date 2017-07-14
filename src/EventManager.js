@@ -226,10 +226,10 @@ function EventManager() { // assumed to be a calendar
 
 	function decrementPendingSourceCnt() {
 		pendingSourceCnt--;
-		if (!pendingSourceCnt) {
+		//if (!pendingSourceCnt) {
 			reportEventChange(cache); // updates prunedCache
 			t.trigger('eventsReceived', prunedCache);
-		}
+		//}
 	}
 
 
